@@ -31,12 +31,13 @@ function App() {
         <nav className='pt-8' >
             <h1 className= 'text-5xl text-center pb-16'> To Do List </h1>
         </nav>
-        <ToDoForm />
+        <ToDoForm
+            setTodos = {setTodos}
+            fetchData = {fetchData}/>
         <Table
-        todos = {todos}
-        setTodos = {setTodos}
-        isLoading = {isLoading}
-        />
+            todos = {todos}
+            setTodos = {setTodos}
+            isLoading = {isLoading}/>
     </div>
 
   )
